@@ -353,6 +353,7 @@ MODEL_ID_MAPPING = {
     0xA3CE: "Orion Smart 48V|24V-16A Isolated DC-DC Charger",
     0xA3C7: "Orion Smart 48V|48V-6A Isolated DC-DC Charger",
     0xA3CF: "Orion Smart 48V|48V-8.5A Isolated DC-DC Charger",
+    0xA0EB: "Lithium Battery Smart 12,8V|200",
 }
 
 
