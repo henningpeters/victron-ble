@@ -1,8 +1,6 @@
-from typing import Optional
+from construct import Array, Byte, Int8ul, Int16ul, Int32ul, Struct
 
-from construct import Int8ul, Int16ul, Int32ul, Struct, Array, Byte
-
-from victron_ble.devices.base import Device, DeviceData, OperationMode
+from victron_ble.devices.base import Device, DeviceData
 
 
 class LithiumBatteryData(DeviceData):
@@ -42,7 +40,7 @@ class LithiumBattery(Device):
         parsed = {
             "bms_flags": pkt.bms_flags,
             "battery_voltage": (pkt.battery_voltage_balancer_status & 0x0FFF) / 100,
-            "temperature": pkt.temperature - 40
+            "temperature": pkt.temperature - 40,
         }
 
         return LithiumBatteryData(self.get_model_id(data), parsed)
