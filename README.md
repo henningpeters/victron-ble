@@ -25,6 +25,9 @@ Disclaimer: This software is not an officially supported interface by Victron an
     * Solar Power (W)
     * Yield Today (Wh)
     * External Device Load (A)
+* SmartLithium (Tested with LFP-12,8/200)
+    * Voltage
+    * Temperature
 
 If you'd like to support development for additional devices, consider [sponsoring this project](https://github.com/sponsors/keshavdv/)
 
